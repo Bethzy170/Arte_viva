@@ -1,0 +1,158 @@
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #fff9fc;
+  color: #333;
+}
+
+header {
+  background-color: #800080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  background: linear-gradient(#d89eff, #ffffff);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contenido-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #800080;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.galeria, .eventos, .contacto {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #800080;
+}
+
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card span {
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  color: #800080;
+}
+
+.lista-eventos {
+  display: grid;
+  gap: 20px;
+}
+
+.evento {
+  background-color: #f4e1ff;
+  padding: 20px;
+  border-left: 6px solid #800080;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #800080;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #800080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.aviso-fijo {
+  background-color: #ffddf0;
+  color: #800080;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+

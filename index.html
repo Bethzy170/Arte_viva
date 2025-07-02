@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arte Viva | Arte y Entretenimiento</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .entrada-blog {
+      background: #f5f5f5;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .entrada-blog:hover {
+      background: #ffe6f2;
+    }
+    .contenedor-blog {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .entrada-blog {
+      flex: 1 1 calc(50% - 40px);
+    }
+    .testimonios {
+      padding: 60px 20px;
+      background-color: #fdf4ff;
+      text-align: center;
+    }
+    .testimonios h2 {
+      color: #800080;
+    }
+    .testimonios .comentario {
+      margin: 20px auto;
+      max-width: 600px;
+      font-style: italic;
+    }
+    .galeria .intro-text {
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner Webinar -->
+  <div class="aviso-fijo">
+    <p>📢 ¡Bienvenido a Arte Viva! Explora talento, creatividad y cultura en un solo lugar.</p>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><img height="56" src="img/mural_10936673.png" alt="Logo">Arte Viva</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="contenido-hero">
+      <h1>Explora tu creatividad con Arte Viva</h1>
+      <p>Donde el arte, la cultura y el entretenimiento se encuentran para inspirarte.</p>
+      <a href="#galeria" class="btn">Ver Galería</a>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section class="galeria" id="galeria">
+    <h2><i class="fas fa-palette"></i> Galería Creativa</h2>
+    <p class="intro-text">Descubre nuestras expresiones artísticas destacadas en diferentes áreas: teatro, pintura, cine y música.</p>
+    <div class="contenedor-galeria">
+      <div class="card">
+        <img src="img/istockphoto-1972391257-1024x1024.jpg" alt="Teatro">
+        <span>Teatro</span>
+      </div>
+      <div class="card">
+        <img src="img/paint-2985569_1920.jpg" alt="Pintura">
+        <span>Pintura</span>
+      </div>
+      <div class="card">
+        <img src="img/istockphoto-1936994145-1024x1024.jpg" alt="Cine">
+        <span>Cine</span>
+      </div>
+      <div class="card">
+        <img src="img/street-music-4335710_1280.jpg" alt="Música">
+        <span>Música</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eventos -->
+  <section class="eventos" id="eventos">
+    <h2><i class="fas fa-calendar-alt"></i> Eventos Destacados</h2>
+    <p class="intro-text">Participa en nuestros próximos eventos culturales y artísticos. ¡No te los pierdas!</p>
+    <div class="lista-eventos">
+      <div class="evento">
+        <h3>🎭 Festival de Teatro Callejero</h3>
+        <p>10 de Julio · Centro Cultural · Entrada Libre</p>
+      </div>
+      <div class="evento">
+        <h3>🎨 Taller de Pintura Abstracta</h3>
+        <p>15 de Julio · Museo de Arte · $30.000</p>
+      </div>
+      <div class="evento">
+        <h3>🎬 Proyección de Cine Indie</h3>
+        <p>20 de Julio · Cine Club · Gratuito</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="testimonios">
+    <h2><i class="fas fa-comment"></i> Lo que dicen nuestros visitantes</h2>
+    <div class="comentario">"Una experiencia increíble, me sentí conectada con cada expresión artística. ¡Volveré sin dudarlo!" - Ana M.</div>
+    <div class="comentario">"Los eventos son de gran calidad y la galería está muy bien curada. ¡Felicitaciones al equipo de Arte Viva!" - Carlos T.</div>
+  </section>
+
+  <!-- Blog / Novedades -->
+  <section class="blog" id="blog">
+    <h2><i class="fas fa-newspaper"></i> Novedades y Consejos</h2>
+    <div class="contenedor-blog">
+      <div class="entrada-blog">
+        <h3>🎨 Cómo empezar en la pintura sin experiencia</h3>
+        <p>Consejos básicos para dar tus primeros pasos en el mundo del color y la creatividad.</p>
+      </div>
+      <div class="entrada-blog">
+        <h3>🎬 Recomendaciones de cine arte para ver en casa</h3>
+        <p>Una selección especial de películas independientes que te harán reflexionar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto" id="contacto">
+    <h2><i class="fas fa-envelope"></i> Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+    </form>
+    <div class="redes">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Arte Viva. Todos los derechos reservados. Diseñado con creatividad 🎭🎨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
